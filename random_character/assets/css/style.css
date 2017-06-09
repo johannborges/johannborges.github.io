@@ -1,0 +1,229 @@
+.container {
+  width: 1170px;
+  max-width: calc(100% - 30px);
+  margin: auto; }
+
+#main {
+  margin: 35px auto; }
+  #main h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 120%; }
+  #main > h2 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #CCC; }
+  #main #form {
+    margin-top: 30px; }
+    #main #form > .title {
+      font-size: 20px;
+      font-weight: 700;
+      padding-top: 30px;
+      border-top: 1px solid #CCC;
+      margin-bottom: 30px; }
+  #main .infos {
+    margin-top: 30px; }
+    #main .infos .info_item.ident {
+      padding: 0 50px; }
+    #main .infos .info_item > label > input {
+      display: none; }
+    #main .infos .info_item > label > i {
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      background: #FFF;
+      border: 1px solid #CCC;
+      position: relative;
+      z-index: 2; }
+      #main .infos .info_item > label > i:after {
+        content: "";
+        display: block;
+        margin: 1px;
+        background: #8f6a9a;
+        width: 12px;
+        height: 12px;
+        opacity: 0;
+        transition: .3s; }
+    #main .infos .info_item > label > input:checked + i:after {
+      opacity: 1; }
+    #main .infos .info_item > button {
+      margin-left: 200px; }
+    #main .infos .info_item > .title {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 16px;
+      color: #333;
+      font-weight: 700;
+      line-height: 140%;
+      width: 200px; }
+    #main .infos .info_item > .value {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 16px;
+      color: #333;
+      line-height: 140%;
+      width: calc(100% - 200px); }
+      #main .infos .info_item > .value > div {
+        line-height: 140%;
+        margin-bottom: 5px; }
+        #main .infos .info_item > .value > div:last-of-type {
+          margin-bottom: 0; }
+      #main .infos .info_item > .value > span {
+        display: inline-block;
+        vertical-align: top;
+        line-height: 140%; }
+        #main .infos .info_item > .value > span:not(:last-of-type) {
+          margin-right: 15px; }
+      #main .infos .info_item > .value > input {
+        max-width: 300px; }
+      #main .infos .info_item > .value .option_list {
+        width: 400px;
+        height: 250px;
+        max-width: 100%;
+        border: 1px solid #CCC;
+        background: #FFF;
+        overflow: hidden;
+        overflow-y: scroll; }
+        #main .infos .info_item > .value .option_list label {
+          display: block;
+          width: 100%;
+          position: relative;
+          font-size: 0;
+          padding: 7px 10px;
+          cursor: pointer; }
+          #main .infos .info_item > .value .option_list label > .text {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 10px;
+            font-size: 15px;
+            line-height: 140%;
+            max-width: calc(100% - 26px);
+            position: relative;
+            z-index: 2; }
+          #main .infos .info_item > .value .option_list label > input {
+            display: none; }
+          #main .infos .info_item > .value .option_list label > i {
+            display: inline-block;
+            vertical-align: middle;
+            width: 16px;
+            height: 16px;
+            background: #FFF;
+            border: 1px solid #CCC;
+            position: relative;
+            z-index: 2; }
+            #main .infos .info_item > .value .option_list label > i:after {
+              content: "";
+              display: block;
+              margin: 1px;
+              background: #8f6a9a;
+              width: 12px;
+              height: 12px;
+              opacity: 0;
+              transition: .3s; }
+          #main .infos .info_item > .value .option_list label > .bg {
+            content: "";
+            display: block;
+            background: #DDD;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: .3s;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1; }
+          #main .infos .info_item > .value .option_list label > input:checked + i + .text + .bg,
+          #main .infos .info_item > .value .option_list label > input:checked + i:after {
+            opacity: 1; }
+      #main .infos .info_item > .value .observacao {
+        display: block;
+        margin-top: 5px;
+        font-size: 12px; }
+        #main .infos .info_item > .value .observacao:before {
+          content: "*";
+          display: inline-block;
+          margin-right: 5px; }
+    #main .infos .info_item:not(:last-of-type) {
+      margin-bottom: 20px; }
+
+#footer {
+  margin-top: 30px;
+  padding: 30px 30px 0;
+  background: #222; }
+  #footer .links {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 350px); }
+    #footer .links > .title {
+      font-size: 16px;
+      color: #FFF; }
+    #footer .links .links_list {
+      margin-top: 20px;
+      margin-left: 20px; }
+      #footer .links .links_list .link_item a {
+        display: inline-block;
+        line-height: 20px;
+        font-size: 12px;
+        color: #FFF;
+        text-decoration: none;
+        transition: .3s; }
+        #footer .links .links_list .link_item a:hover, #footer .links .links_list .link_item a:focus {
+          opacity: .4; }
+  #footer .logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 350px;
+    max-width: 100%;
+    transition: .3s; }
+    #footer .logo:hover, #footer .logo:focus {
+      opacity: .4; }
+    #footer .logo img {
+      max-width: 100%; }
+  #footer .creator {
+    color: #FFF;
+    line-height: 75px;
+    font-size: 14px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 30px; }
+    #footer .creator a {
+      text-decoration: none;
+      font-weight: 700;
+      color: #FFF;
+      transition: .3s; }
+      #footer .creator a:hover {
+        opacity: .4; }
+
+@media (max-width: 640px) {
+  #main {
+    margin: 15px auto; }
+    #main .infos .info_item > button {
+      margin: 0; }
+    #main .infos .info_item > .title, #main .infos .info_item > .value {
+      display: block;
+      width: auto; }
+      #main .infos .info_item > .title > .option_list, #main .infos .info_item > .value > .option_list {
+        margin-top: 10px; }
+      #main .infos .info_item > .title > span, #main .infos .info_item > .value > span {
+        display: block;
+        padding: 0 10px; }
+        #main .infos .info_item > .title > span:before, #main .infos .info_item > .value > span:before {
+          content: "- "; } }
+
+@media (max-width: 1169px) {
+  #footer .links {
+    width: 100%; }
+    #footer .links .links_list {
+      margin-left: 0; }
+      #footer .links .links_list .link_item {
+        margin-top: 10px; }
+  #footer .logo {
+    margin-top: 50px; }
+  #footer .creator {
+    line-height: 24px;
+    padding: 20px 0; } }
