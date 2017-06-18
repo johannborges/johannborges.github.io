@@ -44,7 +44,15 @@ Index = {
             var _nome = $("#nome").val().toLocaleLowerCase();
             var _descricao = $("#descricao").val().toLocaleLowerCase();
             var _tipo = $("#tipo").val();
-            var _escola = $("#escola").val();
+            
+            var _escola = [];
+            for(var _i in $("#escola input")){
+                var _this = $("#escola input").eq(_i);
+                
+                if(_this.prop("checked"))
+                    _escola.push(_this.val());
+            }
+            
             var _nivelArcana = $("#nivelarcana").val();
             var _nivelDivina = $("#niveldivina").val();
             
@@ -69,7 +77,7 @@ Index = {
                 if(_descricao != "" && _this.find(".descricao_text").text().toLocaleLowerCase().indexOf(_descricao) < 0)
                     _show = false;
                 
-                if(_escola != "" && _this.data("escola").indexOf(_escola) < 0)
+                if(_escola.length > 0 && $.inArray(_this.data("escola"), _escola) == -1)
                     _show = false;
                 
                 if(_nivelArcana != "" && _this.data("nivelarcana") != _nivelArcana)
