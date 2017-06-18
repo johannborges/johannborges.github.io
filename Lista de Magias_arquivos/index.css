@@ -148,7 +148,8 @@ body{
     height: 10px;
     padding: 0;
 }
-.form.closed *{
+.form.closed *,
+.form.closed #escola{
     display: none;
 }
 .form .form_hide{
