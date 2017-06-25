@@ -20,21 +20,59 @@
 
 	<body>
         <ul id="top_bar">
-            <li>
+            <li class="bar_item">
                 <a href="http://jamboeditora.com.br/categoria/tormenta/" class="logo" target="_blank">
                     <img src="Lista%20de%20Talentos%20-%20Tormenta%20RPG_arquivos/tormenta_logo.png">
                 </a>
             </li>
 
-            <li>
-                <a href="#talentosCombate">Talentos de Combate</a>
-            </li>
+            <li class="submenu">
+                <div class="submenu_title">Talentos <i class="fa fa-caret-down"></i></div>
+                   
+                <ul class="submenu_list">
+                    <li class="submenu_item">
+                        <a href="#talentosCombate">Talentos de Combate</a>
+                    </li>
 
-            <li>
-                <a href="#disclaimer">Que site é esse?</a>
+                    <li class="submenu_item">
+                        <a href="#talentosPericia">Talentos de Perícia</a>
+                    </li>
+
+                    <li class="submenu_item">
+                        <a href="#talentosPericia">Talentos de Destino</a>
+                    </li>
+
+                    <li class="submenu_item">
+                        <a href="#talentosPericia">Poderes Concedidos</a>
+                    </li>
+
+                    <li class="submenu_item">
+                        <a href="#talentosPericia">Talentos da Tormenta</a>
+                    </li>
+
+                    <li class="submenu_item">
+                        <a href="#talentosPericia">Talentos Raciais</a>
+                    </li>
+
+                    <li class="submenu_item">
+                        <a href="#talentosPericia">Talentos Regionais</a>
+                    </li>
+
+                    <li class="submenu_item">
+                        <a href="#talentosPericia">Talentos Ambientais</a>
+                    </li>
+                </ul>
             </li>
             
-            <li>
+            <li class="bar_item">
+                <a href="http://johannborges.github.io/magias/" target="_blank">Lista de Magias</a>
+            </li>
+
+            <li class="bar_item">
+                <a href="#disclaimer" class="disclaimer">Que site é esse?</a>
+            </li>
+            
+            <li class="search">
                 <input id="search" placeholder="Busque qualquer coisa" autocomplete="off" type="text">
                 <span class="clear">
                     <i class="fa fa-times"></i>
@@ -2580,6 +2618,48 @@ talento aumentam de acordo.<br>
 											</li>
 									</ul>
 			</div>
+			
+			
+			<div class="section">
+				<h2 id="talentosPericia">Talentos de Perícia</h2>
+
+				<div class="description">Todos os talentos descritos a seguir fazem 
+parte da lista de talentos adicionais do guerreiro. Alguns também 
+aparecem entre talentos bônus de outras classes, como o monge, ranger e 
+swashbuckler. No entanto, eles não são exclusivos destas classes — 
+qualquer personagem que cumpra seus pré-requisitos pode adquirir estes 
+talentos.</div>
+
+				<ul class="talentos">
+				    					<li class="talento" id="acerto-critico-aprimorado">
+                        <div class="close">
+                            <i class="fa fa-times"></i>
+                            <i class="fa fa-window-restore"></i>
+                        </div>
+                        
+					    <div class="head description">
+                            <div class="title">Acerto Crítico Aprimorado</div>
+                            <div class="texto">Escolha uma arma. Você sabe desferir golpes mortais com a arma escolhida.</div>
+						</div>
+
+												<div class="requisitos description">
+                            <div class="title">Pré-requisitos:</div>
+                            
+                            <div class="texto">
+                            <div>Bônus Base de Ataque +8</div><div><a href="#foco-em-arma">Foco em Arma</a> com a arma escolhida</div>						    </div>
+						</div>
+						
+						<div class="beneficios description">
+                            <div class="title">Benefícios:</div>
+						    <div class="texto">Sua margem de ameaça com a arma escolhida é dobrada.<br>
+		Este efeito não se acumula com qualquer outro que dobre a margem de ameaça, e é sempre o primeiro a ser aplicado.</div>
+						</div>
+
+						
+											</li>
+									</ul>
+			</div>
+			
 			
 			<div id="disclaimer">
 			    <h1>Lista de talentos de Tormenta RPG</h1>

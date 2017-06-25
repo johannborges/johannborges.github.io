@@ -28,7 +28,7 @@ Main = {
 			$(this).closest(".talento").toggleClass("closed");
 		});
 
-		$("#top_bar a:not(.logo)").on("click", function(e){
+		$("#top_bar .submenu_item a, #top_bar .disclaimer").on("click", function(e){
             e.preventDefault();
 
 			var _id = $(this).attr("href");
