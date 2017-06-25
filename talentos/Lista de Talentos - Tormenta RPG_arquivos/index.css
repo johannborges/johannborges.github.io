@@ -74,7 +74,7 @@
             background: #666; }
     #top_bar .submenu:hover .submenu_list {
       width: 200px;
-      height: calc(65px * 8); }
+      height: calc(65px * 9); }
   #top_bar .search {
     position: absolute;
     right: 0;
@@ -83,7 +83,7 @@
     #top_bar .search #search {
       width: 250px;
       height: 65px;
-      padding: 7px 55px 0 15px;
+      padding: 0 55px 0 15px;
       background: #FFF;
       border: 1px solid #CCC;
       font-size: 14px;
@@ -94,7 +94,7 @@
         box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.4); }
     #top_bar .search .clear {
       position: absolute;
-      top: calc((65px - 25px)/2);
+      top: calc((63px - 25px)/2);
       right: 15px;
       z-index: 1;
       width: 30px;
@@ -113,16 +113,8 @@
 
 #middle {
   width: 1170px;
-  padding-top: 65px;
+  padding-top: 50px;
   margin: 35px auto; }
-  #middle #disclaimer {
-    min-height: calc(100vh - 310px); }
-    #middle #disclaimer h1 {
-      font-size: 24px;
-      font-weight: 700;
-      text-align: center;
-      line-height: 120%;
-      margin-top: 35px; }
   #middle .section h2 {
     font-size: 20px;
     font-weight: 700;
@@ -132,9 +124,11 @@
     line-height: 160%;
     text-align: justify;
     padding: 15px 25px 0; }
+    #middle .section > .description br {
+      margin: 10px 0; }
   #middle .section .talentos {
     padding: 0;
-    margin-top: 50px; }
+    margin-top: 20px; }
     #middle .section .talentos .talento {
       display: inline-block;
       width: calc(50% - 50px);
@@ -142,7 +136,7 @@
       margin: 0 calc(25px) 50px;
       background: #FFF;
       box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.4);
-      border-radius: 3px;
+      border-radius: 5px;
       position: relative;
       transition: .3s; }
       #middle .section .talentos .talento.blink {
@@ -221,8 +215,26 @@
           font-size: 18px;
           font-weight: 700; }
 
+#disclaimer {
+  background: #FFF;
+  padding: 50px 0; }
+  #disclaimer .title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 120%; }
+  #disclaimer .text {
+    margin-top: 35px;
+    padding: 0 50px;
+    font-size: 20px;
+    line-height: 160%;
+    text-align: justify; }
+    #disclaimer .text i {
+      display: inline;
+      vertical-align: middle;
+      font-size: 24px; }
+
 #footer {
-  margin-top: 30px;
   padding: 30px 30px 0;
   background: #222;
   text-align: center; }

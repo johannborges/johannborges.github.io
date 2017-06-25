@@ -34,7 +34,7 @@ Main = {
 			var _id = $(this).attr("href");
             
 			$("html, body").animate({
-				scrollTop: $(_id).offset().top - 100
+				scrollTop: $(_id).offset().top - 85
 			}, 300);
         });
 
@@ -44,7 +44,7 @@ Main = {
 			var _id = $(this).attr("href");
             
 			$("html, body").animate({
-				scrollTop: $(_id).offset().top - 100
+				scrollTop: $(_id).offset().top - 85
 			}, 300);
             
             setTimeout(function(){
