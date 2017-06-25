@@ -28,13 +28,23 @@ Main = {
 			$(this).closest(".talento").toggleClass("closed");
 		});
 
-		$("#top_bar .submenu_item a, #top_bar .disclaimer").on("click", function(e){
+		$("#top_bar .submenu_item a").on("click", function(e){
             e.preventDefault();
 
 			var _id = $(this).attr("href");
             
 			$("html, body").animate({
-				scrollTop: $(_id).offset().top - 85
+				scrollTop: $(_id).offset().top - 65
+			}, 300);
+        });
+
+		$("#top_bar .disclaimer").on("click", function(e){
+            e.preventDefault();
+
+			var _id = $(this).attr("href");
+            
+			$("html, body").animate({
+				scrollTop: $(_id).offset().top - 65
 			}, 300);
         });
 
