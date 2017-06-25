@@ -1,0 +1,27 @@
+@media(max-width: 1169px){
+	#middle{
+		width: 100%;
+		padding: 0 15px;
+	}
+
+	#footer .links{
+		width: 100%;
+	}
+
+	#footer .logo{
+		margin-top: 50px;
+	}
+
+	#footer .creator{
+		line-height: 24px;
+
+		padding: 20px 0;
+	}
+
+	#footer .links .links_list{
+		margin-left: 0;
+	}
+	#footer .links .links_list .link_item{
+		margin-top: 10px;
+	}
+}
