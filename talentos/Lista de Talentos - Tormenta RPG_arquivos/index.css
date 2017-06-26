@@ -165,26 +165,28 @@
           width: 30px;
           height: 30px;
           text-align: center;
-          line-height: 28px;
+          line-height: 24px;
           font-size: 16px;
           color: #000;
           cursor: pointer;
-          transition: .3s; }
+          transition: background .3s; }
           #middle .section .container .talentos .talento .close i {
             display: inline-block;
             vertical-align: middle; }
           #middle .section .container .talentos .talento .close:hover {
             background: #DDD; }
-          #middle .section .container .talentos .talento .close .fa-window-restore {
+          #middle .section .container .talentos .talento .close .fa-caret-down {
             display: none; }
         #middle .section .container .talentos .talento.closed .description.head .texto {
           display: none; }
         #middle .section .container .talentos .talento.closed .description:not(.head) {
           display: none; }
-        #middle .section .container .talentos .talento.closed .close .fa-times {
-          display: none; }
-        #middle .section .container .talentos .talento.closed .close .fa-window-restore {
-          display: inline-block; }
+        #middle .section .container .talentos .talento.closed .close {
+          line-height: 28px; }
+          #middle .section .container .talentos .talento.closed .close .fa-caret-up {
+            display: none; }
+          #middle .section .container .talentos .talento.closed .close .fa-caret-down {
+            display: inline-block; }
         #middle .section .container .talentos .talento .manual {
           margin-top: 25px; }
           #middle .section .container .talentos .talento .manual div {
@@ -195,49 +197,49 @@
           #middle .section .container .talentos .talento .manual .title {
             font-weight: 700;
             margin-right: 5px; }
-        #middle .section .container .talentos .talento .description {
+        #middle .section .container .talentos .talento .description:not(.manual) {
           display: block;
           padding: 0 15px; }
-          #middle .section .container .talentos .talento .description .title {
+          #middle .section .container .talentos .talento .description:not(.manual) .title {
             line-height: 160%;
             margin: 0 -15px; }
-          #middle .section .container .talentos .talento .description.requisitos .texto {
+          #middle .section .container .talentos .talento .description:not(.manual).requisitos .texto {
             font-size: 0;
             line-height: 100%;
             text-align: left; }
-            #middle .section .container .talentos .talento .description.requisitos .texto div {
+            #middle .section .container .talentos .talento .description:not(.manual).requisitos .texto div {
               font-size: 16px;
               line-height: 160%; }
-          #middle .section .container .talentos .talento .description .texto {
+          #middle .section .container .talentos .talento .description:not(.manual) .texto {
             display: block;
             margin-top: 5px;
             font-size: 16px;
             line-height: 160%;
             text-align: justify; }
-            #middle .section .container .talentos .talento .description .texto div {
+            #middle .section .container .talentos .talento .description:not(.manual) .texto div {
               display: inline; }
-              #middle .section .container .talentos .talento .description .texto div:not(:last-of-type):after {
+              #middle .section .container .talentos .talento .description:not(.manual) .texto div:not(:last-of-type):after {
                 content: ",";
                 padding-right: 5px; }
-              #middle .section .container .talentos .talento .description .texto div:last-of-type:after {
+              #middle .section .container .talentos .talento .description:not(.manual) .texto div:last-of-type:after {
                 content: "."; }
-            #middle .section .container .talentos .talento .description .texto br {
+            #middle .section .container .talentos .talento .description:not(.manual) .texto br {
               margin: 10px 0; }
-            #middle .section .container .talentos .talento .description .texto a {
+            #middle .section .container .talentos .talento .description:not(.manual) .texto a {
               display: inline;
               font-weight: 700;
               line-height: 160%;
               color: #06C;
               text-decoration: none;
               transition: .3s; }
-              #middle .section .container .talentos .talento .description .texto a:hover {
+              #middle .section .container .talentos .talento .description:not(.manual) .texto a:hover {
                 color: #c64d39; }
-          #middle .section .container .talentos .talento .description:not(.head) {
+          #middle .section .container .talentos .talento .description:not(.manual):not(.head) {
             margin-top: 15px; }
-            #middle .section .container .talentos .talento .description:not(.head) .title {
+            #middle .section .container .talentos .talento .description:not(.manual):not(.head) .title {
               font-size: 16px;
               text-decoration: underline; }
-          #middle .section .container .talentos .talento .description.head .title {
+          #middle .section .container .talentos .talento .description:not(.manual).head .title {
             font-size: 20px;
             font-weight: 700;
             line-height: 160%; }
