@@ -59,7 +59,7 @@ Main = {
                         _section.hide(0);
                 });
             }
-        }, 1000));
+        }, 300));
         
         $("#top_bar .clear").on("click", function(){
             $("#search").val("");
