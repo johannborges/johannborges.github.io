@@ -1,27 +1,70 @@
 Main = {
+    debounce: function(func, wait, immediate){
+        var timeout;
+        
+        return function(){
+            var context = this,
+                args = arguments;
+            
+            var later = function() {
+                timeout = null;
+                if ( !immediate ) {
+                    func.apply(context, args);
+                }
+            };
+            
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait || 200);
+            
+            if ( callNow ) { 
+                func.apply(context, args);
+            }
+        };
+    },
+    
 	init: function(){
-        $("#search").on("keyup", function(){
+        $("#search").on("keyup", Main.debounce(function(){
             var _searchText = $(this).val().trim().toLowerCase();
             
-            if(_searchText.length <= 0)
-                $(".talento").show(0);
+            $(".talento").removeClass("even odd").show(0);
+            $(".section").show(0);
             
-            else{
-                $(".talento").each(function(){
-                    var _this = $(this);
-                    var _text = _this.text().trim().toLowerCase();
+            if(_searchText.length > 0){
+                $(".section").each(function(){
+                    var _section = $(this);
+                    var _count = 0;
 
-                    if(_text.indexOf(_searchText) !== -1)
-                        _this.show(0);
+                    _section.find(".talento").each(function(){
+                        var _this = $(this);
+                        var _text = _this.text().trim().toLowerCase();
+
+                        if(_text.indexOf(_searchText) !== -1){
+                            _this.show(0);
+
+                            _count++;
+
+                            if(_count%2 == 0)
+                                _this.addClass("even");
+                            else
+                                _this.addClass("odd");
+                        }
+                        else
+                            _this.hide(0);
+                    });
+
+                    if(_count > 0)
+                        _section.show(0);
                     else
-                        _this.hide(0);
+                        _section.hide(0);
                 });
             }
-        });
+        }, 1000));
         
         $("#top_bar .clear").on("click", function(){
             $("#search").val("");
-            $(".talento").show(0);
+            $(".talento").removeClass("even odd").show(0);
+            $(".section").show(0);
         });
         
 		$(".talento .close").on("click", function(){

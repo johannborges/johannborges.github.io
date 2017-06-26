@@ -115,38 +115,28 @@
 #middle {
   padding-top: 65px; }
   #middle .section {
-    padding: 25px 0; }
-    #middle .section:not(:first-of-type) {
-      border-top: 1px solid #FFF; }
+    padding: 25px 0 45px; }
     #middle .section#talentos-de-combate {
-      background: #c64d39; }
-      #middle .section#talentos-de-combate .container > .title,
-      #middle .section#talentos-de-combate .container > .description {
-        color: #FFF; }
+      background: #d7ab95; }
     #middle .section#talentos-de-pericia {
-      background: #5e9655; }
-      #middle .section#talentos-de-pericia .container > .title,
-      #middle .section#talentos-de-pericia .container > .description {
-        color: #FFF; }
+      background: #9fba9b; }
     #middle .section#talentos-de-magia {
-      background: #87589d; }
-      #middle .section#talentos-de-magia .container > .title,
-      #middle .section#talentos-de-magia .container > .description {
-        color: #FFF; }
+      background: #92809a; }
     #middle .section#talentos-de-destino {
-      background: #94c3d5; }
+      background: #a0abbe; }
     #middle .section#poderes-concedidos {
-      background: #ece6af;
-      border-top: 1px solid #222; }
+      background: #d3cfaa; }
     #middle .section .container > .title {
       font-size: 20px;
       line-height: 160%;
       font-weight: 700;
-      text-align: center; }
+      text-align: center;
+      color: #FFF; }
     #middle .section .container > .description {
       font-size: 16px;
       line-height: 160%;
       text-align: justify;
+      color: #FFF;
       padding-top: 25px; }
       #middle .section .container > .description br {
         margin: 10px 0; }
@@ -154,14 +144,17 @@
       padding: 0; }
       #middle .section .container .talentos .talento {
         display: inline-block;
-        width: calc(50% - 50px);
+        width: calc(50% - 25px);
         padding: 20px;
-        margin: 50px calc(25px) 0;
+        margin: 50px 0 0;
         background: #FFF;
-        box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.4);
-        border-radius: 5px;
+        box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
         position: relative;
-        transition: .3s; }
+        transition: margin 0, all .3s; }
+        #middle .section .container .talentos .talento:nth-of-type(2n), #middle .section .container .talentos .talento.even {
+          margin-left: 50px; }
+        #middle .section .container .talentos .talento.odd {
+          margin-left: 0; }
         #middle .section .container .talentos .talento.blink {
           background: #DDD; }
         #middle .section .container .talentos .talento .close {
@@ -251,8 +244,7 @@
 
 #disclaimer {
   padding: 50px 0;
-  background: #FFF;
-  border-top: 1px solid #222; }
+  background: #FFF; }
   #disclaimer .title {
     font-size: 24px;
     font-weight: 700;
