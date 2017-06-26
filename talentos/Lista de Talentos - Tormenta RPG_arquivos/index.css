@@ -116,13 +116,13 @@
   padding-top: 65px; }
   #middle .section {
     padding: 25px 0 45px; }
-    #middle .section#talentos-de-combate {
-      background: #c08e75; }
-    #middle .section#talentos-de-pericia {
+    #middle .section#talentos-de-combate, #middle .section#talentos-da-tormenta {
+      background: #cf7b7b; }
+    #middle .section#talentos-de-pericia, #middle .section#talentos-raciais {
       background: #9fba9b; }
-    #middle .section#talentos-de-magia {
+    #middle .section#talentos-de-magia, #middle .section#talentos-ambientais {
       background: #866a96; }
-    #middle .section#talentos-de-destino {
+    #middle .section#talentos-de-destino, #middle .section#talentos-regionais {
       background: #a0abbe; }
     #middle .section#poderes-concedidos {
       background: #cea8bc; }
@@ -152,13 +152,13 @@
         background: #FFF;
         box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.2);
         position: relative;
-        transition: margin 0, all .3s; }
+        transition: background .3s; }
         #middle .section .container .talentos .talento:nth-of-type(2n), #middle .section .container .talentos .talento.even {
           margin-left: 50px; }
         #middle .section .container .talentos .talento.odd {
           margin-left: 0; }
         #middle .section .container .talentos .talento.blink {
-          background: #DDD; }
+          background: #e2e0ab; }
         #middle .section .container .talentos .talento .close {
           position: absolute;
           top: 5px;
@@ -271,7 +271,7 @@
   #footer .logo {
     display: inline-block;
     vertical-align: middle;
-    width: 350px;
+    width: 400px;
     max-width: 100%;
     transition: .3s; }
     #footer .logo:hover {
@@ -285,12 +285,12 @@
       display: inline-block;
       margin-right: 5px;
       color: #EEE;
-      font-size: 14px; }
+      font-size: 16px; }
     #footer .creator a {
       display: inline-block;
       text-decoration: none;
       font-weight: 700;
-      font-size: 14px;
+      font-size: 16px;
       color: #c64d39;
       transition: .3s; }
       #footer .creator a:hover {
