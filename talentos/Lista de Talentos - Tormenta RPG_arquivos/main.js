@@ -71,42 +71,28 @@ Main = {
 			$(this).closest(".talento").toggleClass("closed");
 		});
 
-		$("#top_bar .submenu_item a").on("click", function(e){
+		$("#top_bar .submenu_item a, #top_bar .disclaimer, #middle a").on("click", function(e){
             e.preventDefault();
 
 			var _id = $(this).attr("href");
+            var _offTop = 95;
+            
+            if($(_id).hasClass("section"))
+                _offTop = 65;
             
 			$("html, body").animate({
-				scrollTop: $(_id).offset().top - 65
-			}, 300);
-        });
-
-		$("#top_bar .disclaimer").on("click", function(e){
-            e.preventDefault();
-
-			var _id = $(this).attr("href");
-            
-			$("html, body").animate({
-				scrollTop: $(_id).offset().top - 65
-			}, 300);
-        });
-
-		$("#middle a").on("click", function(e){
-            e.preventDefault();
-
-			var _id = $(this).attr("href");
-            
-			$("html, body").animate({
-				scrollTop: $(_id).offset().top - 85
+				scrollTop: $(_id).offset().top - _offTop
 			}, 300);
             
-            setTimeout(function(){
-                $(_id).addClass("blink");
-            }, 450);
+            if($(_id).hasClass("section")){
+                setTimeout(function(){
+                    $(_id).addClass("blink");
+                }, 450);
 
-            setTimeout(function(){
-                $(_id).removeClass("blink");
-            }, 1500);
+                setTimeout(function(){
+                    $(_id).removeClass("blink");
+                }, 1500);
+            }
 		});
 	}
 }

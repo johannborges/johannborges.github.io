@@ -54,16 +54,16 @@
       left: 0;
       top: 65px;
       z-index: 1;
-      width: 0;
-      height: 0;
-      overflow: hidden;
-      transition: .3s; }
+      display: none;
+      width: 200px; }
       #top_bar .submenu .submenu_list .submenu_item {
-        display: block; }
+        display: block;
+        vertical-align: top;
+        width: 200px; }
         #top_bar .submenu .submenu_list .submenu_item a {
           display: block;
           background: #444;
-          width: 200px;
+          width: 100%;
           height: 65px;
           padding: 10px 20px;
           color: #FFF;
@@ -74,8 +74,7 @@
           #top_bar .submenu .submenu_list .submenu_item a:hover {
             background: #666; }
     #top_bar .submenu:hover .submenu_list {
-      width: 200px;
-      height: calc(65px * 9); }
+      display: block; }
   #top_bar .search {
     position: absolute;
     right: 0;
@@ -116,15 +115,15 @@
   padding-top: 65px; }
   #middle .section {
     padding: 25px 0 45px; }
-    #middle .section#talentos-de-combate, #middle .section#talentos-da-tormenta {
+    #middle .section#section-talentos-de-combate, #middle .section#section-talentos-da-tormenta, #middle .section#section-golpes-marciais {
       background: #cf7b7b; }
-    #middle .section#talentos-de-pericia, #middle .section#talentos-raciais {
+    #middle .section#section-talentos-de-pericia, #middle .section#section-talentos-raciais, #middle .section#section-posturas {
       background: #9fba9b; }
-    #middle .section#talentos-de-magia, #middle .section#talentos-ambientais {
+    #middle .section#section-talentos-de-magia, #middle .section#section-talentos-ambientais, #middle .section#section-escolas-de-combate {
       background: #866a96; }
-    #middle .section#talentos-de-destino, #middle .section#talentos-regionais {
+    #middle .section#section-talentos-de-destino, #middle .section#section-talentos-regionais, #middle .section#section-gritos-de-poder {
       background: #a0abbe; }
-    #middle .section#poderes-concedidos {
+    #middle .section#section-poderes-concedidos {
       background: #cea8bc; }
     #middle .section .container > .title {
       font-size: 20px;
@@ -142,6 +141,15 @@
       padding-top: 25px; }
       #middle .section .container > .description br {
         margin: 10px 0; }
+      #middle .section .container > .description a {
+        display: inline;
+        font-weight: 700;
+        line-height: 160%;
+        color: #FFF;
+        text-decoration: underline;
+        transition: .3s; }
+        #middle .section .container > .description a:hover {
+          color: #CCC; }
     #middle .section .container .talentos {
       padding: 0; }
       #middle .section .container .talentos .talento {
