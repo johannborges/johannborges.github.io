@@ -154,6 +154,7 @@
       padding: 0; }
       #middle .section .container .talentos .talento {
         display: inline-block;
+        vertical-align: top;
         width: calc(50% - 25px);
         padding: 20px;
         margin: 50px 0 0;

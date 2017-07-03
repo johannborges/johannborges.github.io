@@ -84,7 +84,7 @@ Main = {
 				scrollTop: $(_id).offset().top - _offTop
 			}, 300);
             
-            if($(_id).hasClass("section")){
+            if(!$(_id).hasClass("section")){
                 setTimeout(function(){
                     $(_id).addClass("blink");
                 }, 450);
