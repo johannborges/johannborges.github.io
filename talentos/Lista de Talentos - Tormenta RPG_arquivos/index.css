@@ -58,7 +58,6 @@
       width: 200px; }
       #top_bar .submenu .submenu_list .submenu_item {
         display: block;
-        vertical-align: top;
         width: 200px; }
         #top_bar .submenu .submenu_list .submenu_item a {
           display: block;
@@ -117,13 +116,13 @@
     padding: 25px 0 45px; }
     #middle .section#section-talentos-de-combate, #middle .section#section-talentos-da-tormenta, #middle .section#section-golpes-marciais {
       background: #cf7b7b; }
-    #middle .section#section-talentos-de-pericia, #middle .section#section-talentos-raciais, #middle .section#section-posturas {
+    #middle .section#section-talentos-de-pericia, #middle .section#section-talentos-ambientais, #middle .section#section-posturas {
       background: #9fba9b; }
-    #middle .section#section-talentos-de-magia, #middle .section#section-talentos-ambientais, #middle .section#section-escolas-de-combate {
+    #middle .section#section-talentos-de-magia, #middle .section#section-escolas-de-combate {
       background: #866a96; }
-    #middle .section#section-talentos-de-destino, #middle .section#section-talentos-regionais, #middle .section#section-gritos-de-poder {
+    #middle .section#section-talentos-de-destino, #middle .section#section-talentos-raciais, #middle .section#section-gritos-de-poder {
       background: #a0abbe; }
-    #middle .section#section-poderes-concedidos {
+    #middle .section#section-poderes-concedidos, #middle .section#section-talentos-regionais {
       background: #cea8bc; }
     #middle .section .container > .title {
       font-size: 20px;
