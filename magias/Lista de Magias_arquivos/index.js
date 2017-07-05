@@ -38,6 +38,21 @@ Index = {
         });
         
         $(".form select, .form input").on("change", function(){
+            if($("#escola").find("input:checked").length > 0){
+                var _escolasText = [];
+                
+                $("#escola").find("input:checked").each(function(){
+                    var _str = $(this).siblings("span").text();
+                    _str = _str.charAt(0).toUpperCase() + _str.slice(1);
+                    
+                    _escolasText.push(_str);
+                });
+
+                $("#escola .title").text(_escolasText.join(", "));
+            }
+            else
+                $("#escola .title").text("Escola de magia");
+            
             if($(this).attr("id") == "showHighlight" && $(this).prop("checked") == true)
                 return;
             
@@ -74,10 +89,8 @@ Index = {
                 if(_escola.length > 0)
                     _show = false;
                 
-                console.log(_show);
-                
                 for(var _e in _escola){
-                    if(_this.data("escola").indexOf(_escola[_e], ) != -1)
+                    if(_this.data("escola").indexOf(_escola[_e]) != -1)
                         _show = true;
                 }
                 
