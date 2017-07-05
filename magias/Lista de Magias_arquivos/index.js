@@ -71,13 +71,20 @@ Index = {
                 var _show = true;
                 var _this = $(this);
                 
+                if(_escola.length > 0)
+                    _show = false;
+                
+                console.log(_show);
+                
+                for(var _e in _escola){
+                    if(_this.data("escola").indexOf(_escola[_e], ) != -1)
+                        _show = true;
+                }
+                
                 if(_nome != "" && _this.data("name").indexOf(_nome) < 0)
                     _show = false;
                 
                 if(_descricao != "" && _this.find(".descricao_text").text().toLocaleLowerCase().indexOf(_descricao) < 0)
-                    _show = false;
-                
-                if(_escola.length > 0 && $.inArray(_this.data("escola"), _escola) == -1)
                     _show = false;
                 
                 if(_nivelArcana != "" && _this.data("nivelarcana") != _nivelArcana)
