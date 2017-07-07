@@ -27,8 +27,7 @@ Main = {
         $("#search").on("keyup", Main.debounce(function(){
             var _searchText = $(this).val().trim().toLowerCase();
             
-            $(".talento").removeClass("even odd").show(0);
-            $(".section").show(0);
+            $(".talento").removeClass("even odd");
             
             if(_searchText.length > 0){
                 $(".section").each(function(){
@@ -58,6 +57,12 @@ Main = {
                     else
                         _section.hide(0);
                 });
+            }
+            
+            else{
+                $(".talento").removeClass("even odd").show(0);
+                $(".section").hide(0);
+                $(".section").eq(0).show(0);
             }
         }, 300));
         
