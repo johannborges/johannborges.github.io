@@ -77,13 +77,16 @@ Main = {
 		});
 
 		$("#top_bar .submenu_item a, #top_bar .disclaimer, #middle a").on("click", function(e){
+            if($(this).attr("target") == "_blank")
+                return;
+            
             e.preventDefault();
 
 			var _id = $(this).attr("href");
             var _offTop = 95;
             
             if($(_id).hasClass("section"))
-                _offTop = 65;
+                _offTop = 66;
             
 			$("html, body").animate({
 				scrollTop: $(_id).offset().top - _offTop
