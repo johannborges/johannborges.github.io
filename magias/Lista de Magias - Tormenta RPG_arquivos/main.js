@@ -72,7 +72,7 @@ Main = {
 //            Main.checkHighlights($(this).prop("checked"));
 //        });
         
-        $(".form select, .form input").on("change", function(){
+        $("#form select, #form input").on("change", function(){
 //            if($(this).attr("id") == "showHighlight")
 //                return;
             
