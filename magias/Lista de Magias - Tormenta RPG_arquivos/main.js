@@ -27,7 +27,7 @@ Main = {
         });
         
         $(".form_hide").on("click", function(){
-            $(".form").removeClass("visible");
+            $("#form").removeClass("visible");
         });
         
         
