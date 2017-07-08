@@ -1,12 +1,4 @@
 Main = {
-    checkScroll: function(_this){
-        if(_this.scrollTop() >= 140)
-            $(".form").addClass("fixed");
-
-        else
-            $(".form").removeClass("fixed");
-    },
-    
 //    checkHighlights: function(_checked){
 //        if(_checked){
 //            $(".spell_holder:not(.checked)").hide();
@@ -27,15 +19,6 @@ Main = {
 //    },
     
     init: function(){
-        Main.checkScroll($(window));
-    
-        $(window).on("scroll", function(){
-            var _this = $(this);
-            
-            Main.checkScroll(_this);
-        });
-        
-        
         $(".spell_holder .check").on("click", function(){
             $(this).closest(".spell_holder").toggleClass("checked");
             
@@ -57,7 +40,7 @@ Main = {
 			var _id = $(this).attr("href");
             
             
-            if(_id == ".form"){
+            if(_id == "#form"){
                 $(_id).toggleClass("visible");
                 return;
             }
