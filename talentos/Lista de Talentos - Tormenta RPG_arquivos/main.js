@@ -27,8 +27,6 @@ Main = {
         $("#search").on("keyup", Main.debounce(function(){
             var _searchText = $(this).val().trim().toLowerCase();
             
-            $(".talento").removeClass("even odd");
-            
             if(_searchText.length > 0){
                 $(".section").each(function(){
                     var _section = $(this);
@@ -42,11 +40,6 @@ Main = {
                             _this.show(0);
 
                             _count++;
-
-                            if(_count%2 == 0)
-                                _this.addClass("even");
-                            else
-                                _this.addClass("odd");
                         }
                         else
                             _this.hide(0);
@@ -60,7 +53,7 @@ Main = {
             }
             
             else{
-                $(".talento").removeClass("even odd").show(0);
+                $(".talento").show(0);
                 $(".section").hide(0);
                 $(".section").eq(0).show(0);
             }
@@ -68,7 +61,7 @@ Main = {
         
         $("#top_bar .clear").on("click", function(){
             $("#search").val("");
-            $(".talento").removeClass("even odd").show(0);
+            $(".talento").show(0);
             $(".section").show(0);
         });
         
@@ -86,7 +79,7 @@ Main = {
             var _offTop = 95;
             
             if($(_id).hasClass("section"))
-                _offTop = 66;
+                _offTop = 65;
             
 			$("html, body").animate({
 				scrollTop: $(_id).offset().top - _offTop

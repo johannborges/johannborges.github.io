@@ -258,8 +258,6 @@
         #middle .magiatipo .container .magias .spell_holder .manual .title {
           font-weight: 700;
           margin-right: 5px; }
-        #middle .magiatipo .container .magias .spell_holder .manual .texto {
-          text-transform: capitalize; }
       #middle .magiatipo .container .magias .spell_holder .description:not(.manual) {
         display: block;
         padding: 0 15px; }
@@ -272,13 +270,20 @@
           font-size: 16px;
           line-height: 160%;
           text-align: justify; }
+          #middle .magiatipo .container .magias .spell_holder .description:not(.manual) .texto.description_text p {
+            line-height: 160%; }
+            #middle .magiatipo .container .magias .spell_holder .description:not(.manual) .texto.description_text p:not(:first-of-type) {
+              margin: 15px 0 0; }
           #middle .magiatipo .container .magias .spell_holder .description:not(.manual) .texto div {
             display: block;
-            line-height: 160%; }
+            line-height: 160%;
+            font-weight: 700; }
+            #middle .magiatipo .container .magias .spell_holder .description:not(.manual) .texto div span {
+              font-weight: 400;
+              text-transform: lowercase;
+              padding-left: 5px; }
             #middle .magiatipo .container .magias .spell_holder .description:not(.manual) .texto div .descritor {
               text-transform: capitalize; }
-          #middle .magiatipo .container .magias .spell_holder .description:not(.manual) .texto br {
-            margin: 10px 0; }
         #middle .magiatipo .container .magias .spell_holder .description:not(.manual):not(.head) {
           margin-top: 15px; }
           #middle .magiatipo .container .magias .spell_holder .description:not(.manual):not(.head) .title {
