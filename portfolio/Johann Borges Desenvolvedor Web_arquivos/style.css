@@ -1,0 +1,239 @@
+.container {
+  width: 1170px;
+  max-width: calc(100% - 30px);
+  margin: auto;
+  position: relative; }
+
+#gotop {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 999;
+  height: 40px;
+  width: 40px;
+  background: #333;
+  box-shadow: 0 0 5px 3px #444;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s; }
+  #gotop:before {
+    content: "";
+    display: inline-block;
+    margin-top: 10px;
+    border: 7px solid transparent;
+    border-bottom-color: #FFF; }
+  #gotop:hover {
+    background: #444; }
+
+#topo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  background: #222; }
+  #topo .logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    background: #444;
+    border-radius: 100%;
+    line-height: 75px;
+    text-align: center; }
+    #topo .logo img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: calc(100% - 20px); }
+  #topo .menu {
+    width: calc(100% - 95px - 300px);
+    padding: 25px 0 25px 20px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle; }
+    #topo .menu .menu_item {
+      display: inline-block;
+      vertical-align: top; }
+      #topo .menu .menu_item a {
+        display: block;
+        height: 55px;
+        padding: 0 20px;
+        color: #FFF;
+        font-size: 16px;
+        line-height: 55px;
+        text-decoration: none;
+        transition: .3s; }
+        #topo .menu .menu_item a:hover {
+          background: rgba(255, 255, 255, 0.2); }
+  #topo .destaque {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+    padding-left: 25px; }
+    #topo .destaque .title {
+      font-weight: 700;
+      font-size: 20px;
+      color: #FFF; }
+    #topo .destaque .subtitle {
+      padding-top: 10px;
+      font-size: 16px;
+      color: #DDD; }
+
+.hello {
+  min-height: 100vh;
+  background: #FFF;
+  padding: 155px 0 50px; }
+  .hello .foto {
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 5px solid #CCC;
+    text-align: center;
+    line-height: 290px;
+    margin: 0 25px 20px 0; }
+    .hello .foto img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%; }
+  .hello .texto p {
+    line-height: 160%;
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 15px; }
+  .hello .texto .title {
+    font-weight: 700;
+    font-size: 26px; }
+  .hello:after {
+    content: "";
+    display: block;
+    clear: both; }
+
+#experiencia .container .title, #jobs .container .title {
+  padding: 30px 0;
+  font-size: 30px;
+  color: #000;
+  font-weight: 700; }
+
+#experiencia .container .description, #jobs .container .description {
+  padding: 30px 0;
+  font-size: 20px;
+  color: #000;
+  line-height: 160%; }
+
+#experiencia .gallery, #jobs .gallery {
+  background: #000; }
+  #experiencia .gallery .gallery_item, #jobs .gallery .gallery_item {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: calc((100vh - 105px)/2);
+    position: relative; }
+    #experiencia .gallery .gallery_item a, #jobs .gallery .gallery_item a {
+      display: block;
+      background: #000;
+      text-align: center;
+      line-height: calc((100vh - 105px)/2);
+      transition: .3s; }
+      #experiencia .gallery .gallery_item a img, #jobs .gallery .gallery_item a img {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: calc(100% - 100px); }
+      #experiencia .gallery .gallery_item a .title,
+      #experiencia .gallery .gallery_item a .tags, #jobs .gallery .gallery_item a .title,
+      #jobs .gallery .gallery_item a .tags {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        width: 100%;
+        padding: 15px;
+        opacity: 0;
+        line-height: 120%;
+        font-size: 16px;
+        color: #FFF;
+        text-align: left;
+        transition: .3s;
+        background: rgba(255, 255, 255, 0.3); }
+      #experiencia .gallery .gallery_item a .tags, #jobs .gallery .gallery_item a .tags {
+        top: auto;
+        bottom: 0; }
+      #experiencia .gallery .gallery_item a:hover, #jobs .gallery .gallery_item a:hover {
+        background: #222; }
+        #experiencia .gallery .gallery_item a:hover .title,
+        #experiencia .gallery .gallery_item a:hover .tags, #jobs .gallery .gallery_item a:hover .title,
+        #jobs .gallery .gallery_item a:hover .tags {
+          opacity: 1; }
+
+#contato {
+  background: #222;
+  padding: 70px 0; }
+  #contato .column {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100%/3);
+    padding: 0 15px; }
+  #contato .pessoal .foto {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #444;
+    text-align: center;
+    line-height: 90px;
+    margin: 0 15px 10px 0; }
+    #contato .pessoal .foto img {
+      display: inline-block;
+      vertical-align: middle;
+      max-width: 100%; }
+  #contato .pessoal .texto {
+    line-height: 160%;
+    font-size: 14px;
+    color: #FFF; }
+  #contato .pessoal:after {
+    content: "";
+    display: block;
+    clear: both; }
+  #contato .social {
+    padding: 0 50px; }
+    #contato .social .social_item {
+      padding-bottom: 10px; }
+      #contato .social .social_item > a,
+      #contato .social .social_item > div {
+        display: inline-block;
+        padding: 10px;
+        transition: .3s; }
+        #contato .social .social_item > a i,
+        #contato .social .social_item > div i {
+          display: inline-block;
+          vertical-align: middle;
+          width: 20px;
+          margin-right: 10px;
+          font-size: 20px;
+          color: #FFF;
+          text-align: center; }
+        #contato .social .social_item > a span,
+        #contato .social .social_item > div span {
+          display: inline-block;
+          vertical-align: middle;
+          font-size: 16px;
+          color: #FFF; }
+      #contato .social .social_item a:hover {
+        background: #444; }
+  #contato .links .link_item {
+    padding-bottom: 10px; }
+    #contato .links .link_item a {
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      transition: .3s; }
+      #contato .links .link_item a .title {
+        display: inline-block;
+        text-transform: uppercase;
+        color: #FFF;
+        font-size: 20px;
+        font-weight: 700; }
+      #contato .links .link_item a .subtitle {
+        padding: 10px 0 0;
+        color: #FFF;
+        font-size: 16px; }
+      #contato .links .link_item a:hover {
+        background: #444; }
