@@ -262,25 +262,6 @@
             font-weight: 700;
             line-height: 160%; }
 
-#disclaimer {
-  padding: 50px 0;
-  border-top: 1px solid #999;
-  background: #FFF; }
-  #disclaimer .title {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 120%; }
-  #disclaimer .text {
-    margin-top: 35px;
-    font-size: 20px;
-    line-height: 160%;
-    text-align: justify; }
-    #disclaimer .text i {
-      display: inline;
-      vertical-align: middle;
-      font-size: 24px; }
-
 #footer {
   padding: 30px 30px 0;
   background: #222;
