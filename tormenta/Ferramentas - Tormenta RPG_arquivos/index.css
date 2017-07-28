@@ -163,9 +163,9 @@
           #middle .lista_ferramentas .ferramenta_item > a .item_info .info_description p:not(:first-of-type) {
             padding-top: 30px; }
       #middle .lista_ferramentas .ferramenta_item > a.spells .img {
-        background-image: url(../img/spell.jpg); }
+        background-image: url(spell.jpg); }
       #middle .lista_ferramentas .ferramenta_item > a.feats .img {
-        background-image: url(../img/feat.jpg); }
+        background-image: url(feat.jpg); }
       #middle .lista_ferramentas .ferramenta_item > a:before {
         content: "";
         position: absolute;
