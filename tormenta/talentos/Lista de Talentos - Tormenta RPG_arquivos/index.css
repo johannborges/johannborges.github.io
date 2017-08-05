@@ -223,9 +223,6 @@
             font-size: 0;
             line-height: 100%;
             text-align: left; }
-            #middle .section .container .talentos .talento .description:not(.manual).requisitos .texto div {
-              font-size: 16px;
-              line-height: 160%; }
           #middle .section .container .talentos .talento .description:not(.manual) .texto {
             display: block;
             margin-top: 5px;
@@ -233,11 +230,21 @@
             line-height: 160%;
             text-align: justify; }
             #middle .section .container .talentos .talento .description:not(.manual) .texto div {
-              display: inline; }
-              #middle .section .container .talentos .talento .description:not(.manual) .texto div:not(:last-of-type):after {
-                content: ",";
-                padding-right: 5px; }
-              #middle .section .container .talentos .talento .description:not(.manual) .texto div:last-of-type:after {
+              display: block;
+              font-size: 16px;
+              line-height: 160%; }
+              #middle .section .container .talentos .talento .description:not(.manual) .texto div:not(:last-of-type) {
+                margin-bottom: 5px; }
+              #middle .section .container .talentos .talento .description:not(.manual) .texto div:before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 7px;
+                margin-top: -2px;
+                width: 5px;
+                height: 5px;
+                background: #222; }
+              #middle .section .container .talentos .talento .description:not(.manual) .texto div:after {
                 content: "."; }
             #middle .section .container .talentos .talento .description:not(.manual) .texto p {
               line-height: 160%; }
