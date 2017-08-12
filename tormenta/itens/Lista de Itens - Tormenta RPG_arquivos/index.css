@@ -77,6 +77,12 @@
 
 #middle {
   padding-top: 65px; }
+  #middle .section#weapons {
+    background: #a79179; }
+    #middle .section#weapons .weapons_holder .weapons_description p,
+    #middle .section#weapons .weapons_holder .weapons_title {
+      color: #FFF;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
   #middle .weapons_holder {
     padding: 50px 0; }
     #middle .weapons_holder .weapons_description {
@@ -90,41 +96,44 @@
           margin-top: 15px; }
       #middle .weapons_holder .weapons_description.nomargin_description {
         margin-bottom: 20px; }
-      #middle .weapons_holder .weapons_description .size_table {
+      #middle .weapons_holder .weapons_description .size_table_holder {
         margin: 30px 0 0;
-        background: #FFF;
-        position: relative;
-        z-index: 1;
-        overflow: hidden; }
-        #middle .weapons_holder .weapons_description .size_table .size_item:first-of-type .size_value {
-          font-weight: 700; }
-        #middle .weapons_holder .weapons_description .size_table .size_item:not(:first-of-type) {
-          transition: .3s; }
-          #middle .weapons_holder .weapons_description .size_table .size_item:not(:first-of-type):hover {
-            background: rgba(0, 0, 0, 0.1); }
-          #middle .weapons_holder .weapons_description .size_table .size_item:not(:first-of-type) .size_value {
-            position: relative; }
-            #middle .weapons_holder .weapons_description .size_table .size_item:not(:first-of-type) .size_value:nth-of-type(5) {
-              font-weight: 700; }
-            #middle .weapons_holder .weapons_description .size_table .size_item:not(:first-of-type) .size_value:before {
-              content: "";
-              position: absolute;
-              left: 0;
-              top: -1000px;
-              z-index: -1;
-              width: 100%;
-              height: 2000px;
-              transition: .3s; }
-            #middle .weapons_holder .weapons_description .size_table .size_item:not(:first-of-type) .size_value:hover:before {
+        padding: 15px;
+        background: #FFF; }
+        #middle .weapons_holder .weapons_description .size_table_holder .size_table {
+          position: relative;
+          z-index: 1;
+          overflow: hidden; }
+          #middle .weapons_holder .weapons_description .size_table_holder .size_table .size_item:first-of-type .size_value {
+            font-weight: 700;
+            background: #FFF; }
+          #middle .weapons_holder .weapons_description .size_table_holder .size_table .size_item:not(:first-of-type) {
+            transition: .3s; }
+            #middle .weapons_holder .weapons_description .size_table_holder .size_table .size_item:not(:first-of-type):hover {
               background: rgba(0, 0, 0, 0.1); }
-        #middle .weapons_holder .weapons_description .size_table .size_item .size_value {
-          display: inline-block;
-          vertical-align: top;
-          width: calc(100%/9);
-          line-height: 40px;
-          text-align: center;
-          font-size: 20px;
-          color: #222; }
+            #middle .weapons_holder .weapons_description .size_table_holder .size_table .size_item:not(:first-of-type) .size_value {
+              position: relative; }
+              #middle .weapons_holder .weapons_description .size_table_holder .size_table .size_item:not(:first-of-type) .size_value:nth-of-type(5) {
+                font-weight: 700; }
+              #middle .weapons_holder .weapons_description .size_table_holder .size_table .size_item:not(:first-of-type) .size_value:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: -1000px;
+                z-index: -1;
+                width: 100%;
+                height: 2000px;
+                transition: .3s; }
+              #middle .weapons_holder .weapons_description .size_table_holder .size_table .size_item:not(:first-of-type) .size_value:hover:before {
+                background: rgba(0, 0, 0, 0.1); }
+          #middle .weapons_holder .weapons_description .size_table_holder .size_table .size_item .size_value {
+            display: inline-block;
+            vertical-align: top;
+            width: calc(100%/9);
+            line-height: 40px;
+            text-align: center;
+            font-size: 20px;
+            color: #222; }
     #middle .weapons_holder .weapons_title {
       font-weight: 700;
       font-size: 20px;
