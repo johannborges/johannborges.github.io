@@ -226,3 +226,79 @@ body {
         font-size: 16px; }
       #contato .links .link_item a:hover {
         background: #444; }
+
+@media (max-width: 799px) {
+  body {
+    padding-top: 0; }
+  #topo {
+    position: static;
+    padding: 15px 0; }
+    #topo .menu {
+      display: none; }
+    #topo .logo {
+      display: block;
+      margin: auto; }
+    #topo .destaque {
+      width: 100%;
+      padding: 15px 15px 0;
+      text-align: center; }
+  #gotop {
+    display: none; }
+  #projetos .gallery .gallery_item {
+    display: block;
+    width: 100%;
+    height: calc(100vw/2); }
+    #projetos .gallery .gallery_item:not(:first-of-type) {
+      border-top: 1px solid #CCC; }
+    #projetos .gallery .gallery_item:nth-of-type(2n+1) a {
+      background: #FFF; }
+    #projetos .gallery .gallery_item:nth-of-type(2n+2) a {
+      background: #000; }
+    #projetos .gallery .gallery_item a {
+      padding: 0 30px;
+      line-height: calc(100vw/2); }
+  #recomendacoes .recomendacao {
+    max-width: 100%;
+    padding: 30px 0; }
+    #recomendacoes .recomendacao .text {
+      font-size: 14px;
+      text-align: justify;
+      padding: 0 15px; }
+      #recomendacoes .recomendacao .text:before, #recomendacoes .recomendacao .text:after {
+        display: none; }
+    #recomendacoes .recomendacao .author {
+      padding-top: 15px;
+      font-size: 16px; }
+  #contato {
+    padding: 15px 0; }
+    #contato .column {
+      display: block;
+      width: 100%;
+      padding: 0; }
+      #contato .column:nth-of-type(2) {
+        padding-top: 15px; }
+      #contato .column:nth-of-type(3) {
+        display: none; }
+      #contato .column .social {
+        padding: 0; }
+        #contato .column .social .social_item:last-of-type {
+          padding-bottom: 0; } }
+
+@media (max-width: 1169px) {
+  #projetos .gallery .gallery_item {
+    height: calc(100vw/2); }
+    #projetos .gallery .gallery_item a {
+      padding: 0 30px;
+      line-height: calc(100vw/2); }
+  #contato {
+    padding: 30px 0; }
+    #contato .column .social {
+      padding: 0; }
+      #contato .column .social a i,
+      #contato .column .social div > i {
+        font-size: 16px; }
+      #contato .column .social a span,
+      #contato .column .social div > span {
+        font-size: 14px; }
+    #contato .column .links .link_item a {
+      padding: 15px 0; } }
