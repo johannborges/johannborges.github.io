@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #000;
+  font-size: 0;
+  font-family: "Open Sans"; }
+
+#top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  height: 100px;
+  width: 100%;
+  background: #ffea7f; }
+  #top .container {
+    position: relative; }
+    #top .container .logo {
+      display: block;
+      width: 250px;
+      color: #000;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 100px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.6); }
+    #top .container .menu {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      line-height: 100px;
+      text-align: right;
+      margin: 0;
+      padding: 0;
+      padding-right: 15px; }
+      #top .container .menu .menu_item {
+        display: inline-block;
+        vertical-align: middle; }
+        #top .container .menu .menu_item a {
+          display: block;
+          height: 50px;
+          padding: 0 20px;
+          line-height: 50px;
+          font-size: 16px;
+          color: #000;
+          text-decoration: none;
+          transition: .3s; }
+          #top .container .menu .menu_item a:hover {
+            background: rgba(255, 255, 255, 0.5); }
+
+.section {
+  padding: 30px 0; }
+  .section .sec_title {
+    font-size: 24px;
+    color: #ffea7f;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .section#home {
+    background: #ffea7f;
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .section#home .big_title {
+      padding: 100px 0 50px;
+      text-align: center;
+      font-size: 60px;
+      color: #FFF;
+      font-weight: 700;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+    .section#home .slogan {
+      text-align: center;
+      font-size: 40px;
+      color: #FFF;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+    .section#home .product_list {
+      text-align: center;
+      padding: 100px 0 0;
+      margin: 0; }
+      .section#home .product_list .product_item {
+        display: inline-block;
+        vertical-align: middle;
+        height: 85px;
+        width: 85px;
+        background: #FFF;
+        border-radius: 100%;
+        margin: 0 15px; }
+  .section#empresa .description {
+    padding-top: 15px; }
+    .section#empresa .description .img_holder {
+      vertical-align: top;
+      width: 500px;
+      height: 325px;
+      margin-top: 30px;
+      line-height: 305px;
+      text-align: center;
+      border: 10px solid #666;
+      overflow: hidden; }
+      .section#empresa .description .img_holder img {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%; }
+      .section#empresa .description .img_holder.left {
+        float: left;
+        margin-right: 30px; }
+      .section#empresa .description .img_holder.right {
+        float: right;
+        margin-left: 30px; }
+      .section#empresa .description .img_holder:first-child {
+        margin-top: 0; }
+    .section#empresa .description p {
+      font-size: 16px;
+      color: #FFF;
+      line-height: 160%;
+      text-align: justify;
+      vertical-align: top; }
+      .section#empresa .description p:not(:first-of-type) {
+        padding-top: 30px; }
+  .section#produtos #products_carousel {
+    margin-top: 30px;
+    padding-bottom: 70px; }
+    .section#produtos #products_carousel .carousel-indicators li {
+      margin: 1px 5px;
+      width: 14px;
+      height: 14px; }
+    .section#produtos #products_carousel .carousel-inner .image_holder {
+      text-align: center; }
+      .section#produtos #products_carousel .carousel-inner .image_holder img {
+        display: inline-block;
+        height: 575px;
+        border: 10px solid #666; }
+    .section#produtos #products_carousel .carousel-inner .text {
+      padding: 0 30px; }
+      .section#produtos #products_carousel .carousel-inner .text p {
+        font-size: 16px;
+        color: #FFF;
+        line-height: 160%;
+        text-align: justify;
+        padding-top: 30px; }
+    .section#produtos #products_carousel .carousel-control span {
+      top: calc(575px/2); }
