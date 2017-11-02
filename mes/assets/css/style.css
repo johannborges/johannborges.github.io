@@ -6,7 +6,7 @@ ul {
   margin: 0; }
 
 body {
-  background: #000;
+  background: #FFF;
   font-size: 0;
   font-family: "Open Sans"; }
 
@@ -17,20 +17,18 @@ body {
   z-index: 99;
   height: 100px;
   width: 100%;
-  background: #ffea7f; }
+  background: #388ecb; }
   #top .container {
     position: relative; }
     #top .container .logo {
       display: block;
-      width: 250px;
-      color: #000;
-      font-weight: 700;
-      font-size: 30px;
+      width: 300px;
       line-height: 100px;
-      text-transform: uppercase;
-      text-decoration: none;
-      text-align: center;
-      background: rgba(255, 255, 255, 0.6); }
+      text-align: center; }
+      #top .container .logo img {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 100%; }
     #top .container .menu {
       position: absolute;
       right: 0;
@@ -50,21 +48,21 @@ body {
           padding: 0 20px;
           line-height: 50px;
           font-size: 16px;
-          color: #000;
+          color: #FFF;
           text-decoration: none;
           transition: .3s; }
           #top .container .menu .menu_item a:hover {
-            background: rgba(255, 255, 255, 0.5); }
+            background: rgba(255, 255, 255, 0.3); }
 
 .section {
   padding: 30px 0; }
   .section .sec_title {
     font-size: 24px;
-    color: #ffea7f;
+    color: #388ecb;
     font-weight: 700;
     text-transform: uppercase; }
   .section#home {
-    background: #ffea7f;
+    background: #388ecb;
     padding-top: 100px;
     padding-bottom: 100px; }
     .section#home .big_title {
@@ -100,7 +98,8 @@ body {
       margin-top: 30px;
       line-height: 305px;
       text-align: center;
-      border: 10px solid #666;
+      border-radius: 3px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
       overflow: hidden; }
       .section#empresa .description .img_holder img {
         display: inline-block;
@@ -116,7 +115,7 @@ body {
         margin-top: 0; }
     .section#empresa .description p {
       font-size: 16px;
-      color: #FFF;
+      color: #000;
       line-height: 160%;
       text-align: justify;
       vertical-align: top; }
@@ -129,17 +128,24 @@ body {
       margin: 1px 5px;
       width: 14px;
       height: 14px; }
+    .section#produtos #products_carousel .carousel-control.left,
+    .section#produtos #products_carousel .carousel-control.right {
+      background-image: none; }
+      .section#produtos #products_carousel .carousel-control.left span,
+      .section#produtos #products_carousel .carousel-control.right span {
+        color: #000; }
     .section#produtos #products_carousel .carousel-inner .image_holder {
       text-align: center; }
       .section#produtos #products_carousel .carousel-inner .image_holder img {
         display: inline-block;
         height: 575px;
-        border: 10px solid #666; }
+        border-radius: 3px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.6); }
     .section#produtos #products_carousel .carousel-inner .text {
       padding: 0 30px; }
       .section#produtos #products_carousel .carousel-inner .text p {
         font-size: 16px;
-        color: #FFF;
+        color: #000;
         line-height: 160%;
         text-align: justify;
         padding-top: 30px; }
@@ -174,7 +180,8 @@ body {
       display: inline-block;
       vertical-align: top;
       width: 300px;
-      border: 10px solid #333;
+      border-radius: 3px;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
       overflow: hidden;
       text-align: center; }
       .section#videos .video_list .video_item .thumb img {
@@ -190,13 +197,13 @@ body {
       padding-left: 30px; }
       .section#videos .video_list .video_item .information .title {
         font-size: 20px;
-        color: #FFF;
+        color: #000;
         font-weight: 700;
         line-height: 160%; }
       .section#videos .video_list .video_item .information .description {
         margin-top: 15px;
         font-size: 16px;
-        color: #FFF;
+        color: #000;
         line-height: 160%; }
       .section#videos .video_list .video_item .information .open_video {
         text-align: right; }
@@ -204,13 +211,13 @@ body {
           display: inline-block;
           padding: 10px 15px;
           margin-top: 30px;
-          background: #ffea7f;
-          color: #000;
+          background: #388ecb;
+          color: #FFF;
           font-size: 16px;
           text-decoration: none;
           transition: .3s; }
           .section#videos .video_list .video_item .information .open_video a:hover {
-            background: #fff7cc; }
+            background: #74b0db; }
   .section#contato .form_contato {
     display: inline-block;
     vertical-align: top;
@@ -219,17 +226,21 @@ body {
       margin-top: 30px; }
       .section#contato .form_contato .form_list .form_item .title {
         font-size: 16px;
-        color: #ffea7f; }
+        color: #388ecb; }
       .section#contato .form_contato .form_list .form_item input, .section#contato .form_contato .form_list .form_item textarea {
         display: block;
         margin: 10px 0 0;
         padding: 0 15px;
-        background: #FFF;
-        border: 0;
+        background: #F9F9F9;
+        border: 1px solid #CCC;
         width: 100%;
         height: 50px;
         color: #000;
-        font-size: 16px; }
+        font-size: 16px;
+        transition: .3s; }
+        .section#contato .form_contato .form_list .form_item input:focus, .section#contato .form_contato .form_list .form_item textarea:focus {
+          box-shadow: inset 0 0 3px 0 rgba(0, 0, 0, 0.3);
+          background: #EEE; }
       .section#contato .form_contato .form_list .form_item textarea {
         padding: 12px 15px;
         height: 300px;
@@ -239,14 +250,14 @@ body {
         text-align: right; }
         .section#contato .form_contato .form_list .form_item:last-of-type button {
           padding: 10px 15px;
-          background: #ffea7f;
+          background: #388ecb;
           border: 0;
-          color: #000;
+          color: #FFF;
           font-size: 16px;
           text-decoration: none;
           transition: .3s; }
           .section#contato .form_contato .form_list .form_item:last-of-type button:hover {
-            background: #fff7cc; }
+            background: #74b0db; }
   .section#contato .info_contato {
     display: inline-block;
     vertical-align: top;
@@ -255,9 +266,9 @@ body {
     padding-top: 30px; }
     .section#contato .info_contato .title {
       font-size: 20px;
-      color: #FFF;
+      color: #000;
       font-weight: 700; }
     .section#contato .info_contato .info_item {
       margin-top: 30px;
       font-size: 16px;
-      color: #FFF; }
+      color: #000; }
